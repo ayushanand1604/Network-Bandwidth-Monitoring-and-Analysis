@@ -1,0 +1,16 @@
+# Compiled bytecode
+bin/
+*.class
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Database locks / journals
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Temporary build directories
+tmp_jar/

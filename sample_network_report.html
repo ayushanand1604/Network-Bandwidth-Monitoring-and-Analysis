@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<title>Network Bandwidth & Performance Report</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif; background-color: #0f172a; color: #f8fafc; margin: 0; padding: 24px; }
+.container { max-width: 1000px; margin: 0 auto; background: #1e293b; border-radius: 12px; padding: 32px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); }
+h1, h2 { color: #38bdf8; margin-top: 0; }
+.badge { display: inline-block; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: bold; }
+.badge-info { background: #0284c7; color: white; }
+.badge-warning { background: #d97706; color: white; }
+.badge-critical { background: #dc2626; color: white; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 24px 0; }
+.card { background: #334155; padding: 18px; border-radius: 8px; border-left: 4px solid #38bdf8; }
+.card-title { font-size: 12px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; }
+.card-value { font-size: 24px; font-weight: bold; margin-top: 6px; color: #f1f5f9; }
+table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 13px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #475569; }
+th { background-color: #1e293b; color: #94a3b8; text-transform: uppercase; font-size: 11px; }
+tr:hover { background-color: #334155; }
+.footer { margin-top: 32px; font-size: 12px; color: #64748b; text-align: center; }
+</style>
+</head>
+<body>
+<div class='container'>
+<h1>Network Bandwidth Monitoring & Analysis Report</h1>
+<p style='color: #94a3b8;'>Generated on 2026-11-20 08:59:14 | Active Interface: <strong>en0</strong></p>
+<div class='grid'>
+<div class='card'><div class='card-title'>Total Transferred</div><div class='card-value'>25.18 GB</div></div>
+<div class='card' style='border-color: #10b981;'><div class='card-title'>Total Received (DL)</div><div class='card-value'>23.31 GB</div></div>
+<div class='card' style='border-color: #f59e0b;'><div class='card-title'>Total Sent (UL)</div><div class='card-value'>1.87 GB</div></div>
+<div class='card'><div class='card-title'>Peak Download</div><div class='card-value'>2.50 MB/s</div></div>
+<div class='card'><div class='card-title'>Avg Download</div><div class='card-value'>1.69 MB/s</div></div>
+<div class='card'><div class='card-title'>Session Duration</div><div class='card-value'>299 s</div></div>
+</div>
+<h2>Recent Network Alerts (2)</h2>
+<table><thead><tr><th>Time</th><th>Severity</th><th>Rule</th><th>Message</th></tr></thead><tbody>
+<tr><td>2026-11-20 08:57:14</td><td><span class='badge badge-info'>INFO</span></td><td>TRAFFIC_SPIKE</td><td>Sudden Traffic Spike: 3.42 MB/s (Rolling avg: 0.98 MB/s)</td></tr>
+<tr><td>2026-11-20 08:58:14</td><td><span class='badge badge-warning'>WARNING</span></td><td>SPEED_LIMIT</td><td>High Download Speed: 18.20 MB/s exceeds limit of 15.00 MB/s</td></tr>
+</tbody></table>
+<h2>Recent Bandwidth Snapshots</h2>
+<table><thead><tr><th>Time</th><th>Interface</th><th>Download Speed</th><th>Upload Speed</th><th>Total In</th><th>Total Out</th></tr></thead><tbody>
+<tr><td>2026-11-20 08:58:54</td><td>en0</td><td style='color: #38bdf8;'>1.50 MB/s</td><td style='color: #10b981;'>450.00 KB/s</td><td>23.28 GB</td><td>1.86 GB</td></tr>
+<tr><td>2026-11-20 08:58:55</td><td>en0</td><td style='color: #38bdf8;'>1.98 MB/s</td><td style='color: #10b981;'>438.16 KB/s</td><td>23.28 GB</td><td>1.86 GB</td></tr>
+<tr><td>2026-11-20 08:58:56</td><td>en0</td><td style='color: #38bdf8;'>2.34 MB/s</td><td style='color: #10b981;'>404.51 KB/s</td><td>23.29 GB</td><td>1.86 GB</td></tr>
+<tr><td>2026-11-20 08:58:57</td><td>en0</td><td style='color: #38bdf8;'>2.50 MB/s</td><td style='color: #10b981;'>354.35 KB/s</td><td>23.29 GB</td><td>1.86 GB</td></tr>
+<tr><td>2026-11-20 08:58:58</td><td>en0</td><td style='color: #38bdf8;'>2.41 MB/s</td><td style='color: #10b981;'>295.62 KB/s</td><td>23.29 GB</td><td>1.86 GB</td></tr>
+<tr><td>2026-11-20 08:58:59</td><td>en0</td><td style='color: #38bdf8;'>2.10 MB/s</td><td style='color: #10b981;'>237.58 KB/s</td><td>23.29 GB</td><td>1.86 GB</td></tr>
+<tr><td>2026-11-20 08:59:00</td><td>en0</td><td style='color: #38bdf8;'>1.64 MB/s</td><td style='color: #10b981;'>189.39 KB/s</td><td>23.29 GB</td><td>1.86 GB</td></tr>
+<tr><td>2026-11-20 08:59:01</td><td>en0</td><td style='color: #38bdf8;'>1.15 MB/s</td><td style='color: #10b981;'>158.67 KB/s</td><td>23.29 GB</td><td>1.86 GB</td></tr>
+<tr><td>2026-11-20 08:59:02</td><td>en0</td><td style='color: #38bdf8;'>761.03 KB/s</td><td style='color: #10b981;'>150.26 KB/s</td><td>23.29 GB</td><td>1.86 GB</td></tr>
+<tr><td>2026-11-20 08:59:03</td><td>en0</td><td style='color: #38bdf8;'>535.01 KB/s</td><td style='color: #10b981;'>165.49 KB/s</td><td>23.29 GB</td><td>1.86 GB</td></tr>
+<tr><td>2026-11-20 08:59:04</td><td>en0</td><td style='color: #38bdf8;'>554.06 KB/s</td><td style='color: #10b981;'>201.95 KB/s</td><td>23.29 GB</td><td>1.86 GB</td></tr>
+<tr><td>2026-11-20 08:59:05</td><td>en0</td><td style='color: #38bdf8;'>813.53 KB/s</td><td style='color: #10b981;'>253.90 KB/s</td><td>23.29 GB</td><td>1.87 GB</td></tr>
+<tr><td>2026-11-20 08:59:06</td><td>en0</td><td style='color: #38bdf8;'>1.22 MB/s</td><td style='color: #10b981;'>313.12 KB/s</td><td>23.30 GB</td><td>1.87 GB</td></tr>
+<tr><td>2026-11-20 08:59:07</td><td>en0</td><td style='color: #38bdf8;'>1.72 MB/s</td><td style='color: #10b981;'>370.28 KB/s</td><td>23.30 GB</td><td>1.87 GB</td></tr>
+<tr><td>2026-11-20 08:59:08</td><td>en0</td><td style='color: #38bdf8;'>2.16 MB/s</td><td style='color: #10b981;'>416.33 KB/s</td><td>23.31 GB</td><td>1.87 GB</td></tr>
+<tr><td>2026-11-20 08:59:09</td><td>en0</td><td style='color: #38bdf8;'>2.44 MB/s</td><td style='color: #10b981;'>444.03 KB/s</td><td>23.32 GB</td><td>1.87 GB</td></tr>
+<tr><td>2026-11-20 08:59:10</td><td>en0</td><td style='color: #38bdf8;'>2.49 MB/s</td><td style='color: #10b981;'>448.98 KB/s</td><td>23.32 GB</td><td>1.87 GB</td></tr>
+<tr><td>2026-11-20 08:59:11</td><td>en0</td><td style='color: #38bdf8;'>2.30 MB/s</td><td style='color: #10b981;'>430.41 KB/s</td><td>23.32 GB</td><td>1.87 GB</td></tr>
+<tr><td>2026-11-20 08:59:12</td><td>en0</td><td style='color: #38bdf8;'>1.91 MB/s</td><td style='color: #10b981;'>391.25 KB/s</td><td>23.32 GB</td><td>1.87 GB</td></tr>
+<tr><td>2026-11-20 08:59:13</td><td>en0</td><td style='color: #38bdf8;'>1.42 MB/s</td><td style='color: #10b981;'>337.69 KB/s</td><td>23.31 GB</td><td>1.87 GB</td></tr>
+</tbody></table>
+<div class='footer'>Java Computer Networks Project &bull; Network Bandwidth Monitoring and Analysis System</div>
+</div></body></html>
